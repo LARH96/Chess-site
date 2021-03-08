@@ -29,48 +29,90 @@
 <body id="page-top">
 
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-black" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNavNoHome">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger nav-link" href="index.html">Inicio</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
-                Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                            href="datosgeneralesdelservicio.html">¿Quienes somos?</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Contenido
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item dpitem" href="historia.html">Historia</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item dpitem" href="beneficios.html">Beneficios</a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item dpitem" href="#">Tutoriales</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item dpitem" href="https://fcacostarica.com/" target="_blank">Federacion Central de Ajedrez Costa Rica</a>
+                            <a class="dropdown-item dpitem" href="galeriadeimagenes.html">Galería de imagenes</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item dpitem" href="https://www.fide.com/" target="_blank">Federacion Internacional de Ajedrez</a>
+                            <a class="dropdown-item dpitem" href="https://fcacostarica.com/" target="_blank">Federacion
+                                Central de Ajedrez Costa Rica</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item dpitem" href="https://www.fide.com/" target="_blank">Federacion
+                                Internacional de Ajedrez</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="acercadelsitio.html">Acerca del sitio</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="acercadelsitio.html">Acerca del
+                            sitio</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="infodecontacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="autor.html">Autor</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Main -->
-    <div class="container">
+    <!-- Main-->
+    <div class="container" id="empezar">
         <div class="row">
-            <div class="col">
-                <p>EJ</p>
+            <div class="col-12">
+                <h1 class="text-center mt-5 text-primary text-uppercase">Información del autor</h1>
+
+                <table class="table table-striped table-hover">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Fotografía</th>
+                            <td><img id="fotografia-perfil" src="assets/img/fotografia.png"
+                                    alt="Fotografía del autor del sitio"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cédula</th>
+                            <td>207570657</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Nombre</th>
+                            <td>Luis Alberto Rodríguez Herrera</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Correo electrónico</th>
+                            <td>lalbertorodriguez96@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Nacimiento</th>
+                            <td>17/09/1996</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Github</th>
+                            <td><a href="https://github.com/LARH96" target="_blank">LARH96</a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 
     <!-- Footer-->
-    <footer class="footer bg-black small text-center text-white-50">
+    <footer class="footer bg-black small text-center text-white-50 fixed-bottom">
         <div class="container">Derechos reservados © Luis A. Rodríguez H. 2021</div>
     </footer>
 

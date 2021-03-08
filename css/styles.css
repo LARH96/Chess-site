@@ -10130,7 +10130,7 @@ body {
 #mainNav .navbar-toggler:focus {
   outline: none;
 }
-#mainNav .navbar-brand {
+#mainNav .navbar-brand {/*Palabra Inicio*/
   color: #000000;
   font-weight: 700;
   padding: 0.9rem 0;
@@ -10165,7 +10165,7 @@ body {
     color: rgba(255, 255, 255, 0.75);
   }
   #mainNav .nav-link:active {
-    color: #fff;
+    color: #fff; 
   }
   #mainNav.navbar-shrink {
     background-color: #fff;
@@ -10185,6 +10185,81 @@ body {
     color: #467370;
   }
   #mainNav.navbar-shrink .nav-link.active {
+    color: #64a19d;
+    outline: none;
+    border-bottom: 0.25rem solid #64a19d;
+  }
+}
+
+
+#mainNavNoHome {
+  min-height: 3.5rem;
+  background-color: #fff;
+}
+#mainNavNoHome .navbar-toggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: #64a19d;
+  border: 1px solid #64a19d;
+}
+#mainNavNoHome .navbar-toggler:focus {
+  outline: none;
+}
+#mainNavNoHome .navbar-brand {/*Palabra Inicio*/
+  color: #000000;
+  font-weight: 700;
+  padding: 0.9rem 0;
+}
+#mainNavNoHome .navbar-nav .nav-item:hover {
+  color: fade(#fff, 80%);
+  outline: none;
+  background-color: transparent;
+}
+#mainNavNoHome .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+@media (min-width: 992px) {
+  #mainNavNoHome {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: black;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNavNoHome .navbar-brand {
+    padding: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNavNoHome .nav-link {
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNavNoHome .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  #mainNavNoHome .nav-link:active {
+    color: #fff; 
+  }
+  #mainNavNoHome.navbar-shrink {
+    background-color: #fff;
+  }
+  #mainNavNoHome.navbar-shrink .navbar-brand {
+    color: #000000;
+  }
+  #mainNavNoHome.navbar-shrink .nav-link {
+    color: #000000;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNavNoHome.navbar-shrink .nav-link:hover {
+    color: #64a19d;
+  }
+  #mainNavNoHome.navbar-shrink .nav-link:active {
+    color: #467370;
+  }
+  #mainNavNoHome.navbar-shrink .nav-link.active {
     color: #64a19d;
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
