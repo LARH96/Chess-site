@@ -1,0 +1,25 @@
+#aside1 {
+    border-style: solid;
+    padding: 1%;
+    margin: 1%;
+    left: 25%;
+    
+}
+
+#aside2 {
+    border-style: solid;
+    padding: 1%;
+    margin: 1%;
+    left: 25%;
+}
+
+
+#titulonoticias{
+    position: relative;
+    left: 37%;
+}
+
+.dpitem:hover {
+    background-color: black;
+    color: white;
+}
