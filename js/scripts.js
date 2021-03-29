@@ -1,16 +1,11 @@
-/*!
-    * Start Bootstrap - Grayscale v6.0.3 (https://startbootstrap.com/theme/grayscale)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-    */
-    (function ($) {
+(function ($) {
     "use strict"; // Start of use strict
 
-    // Smooth scrolling using jQuery easing
+    // Scrolling suave usando JQUERY
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
             location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
+            this.pathname.replace(/^\//, "") &&
             location.hostname == this.hostname
         ) {
             var target = $(this.hash);
@@ -30,27 +25,61 @@
         }
     });
 
-    // Closes responsive menu when a scroll trigger link is clicked
+    // Cierra menú responsivo cuando el disparador del link es cliqueado
     $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
     });
 
-    // Activate scrollspy to add active class to navbar items on scroll
+    // Activa scrollspy a las clases de los objetos del navbar del scroll
     $("body").scrollspy({
         target: "#mainNav",
         offset: 100,
     });
 
+    //datetime picker con meses y años
+    var fecha = new Date();
+    var anoActual = fecha.getFullYear();
+    var annoInicial = anoActual - 122;
+
+    $("#datepicker").datepicker({
+        dateFormat: "yy-mm-dd",
+        changeMonth: true,
+        changeYear: true,
+        yearRange: annoInicial + ":" + anoActual
+    });
+
+    //calcula edad
+    $('#enviar').click(function () {
+        calculaEdad();
+    });
+
+    function calculaEdad(){
+        var hoy = new Date();
+        var cumpleanos = new Date(document.getElementById('datepicker').value);
+        var edad = hoy.getFullYear() - cumpleanos.getFullYear();
+        var m = hoy.getMonth() - cumpleanos.getMonth();
+
+        if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
+            edad--;
+        }
+        console.log("Edad:" + edad);
+        document.getElementById('edad').value = edad;
+    }
+
     // Collapse Navbar
     var navbarCollapse = function () {
-        if ($("#mainNav").offset().top > 100) {
+        if (
+            $("#mainNav").offset().top > 100
+           ) {
             $("#mainNav").addClass("navbar-shrink");
         } else {
             $("#mainNav").removeClass("navbar-shrink");
         }
     };
-    // Collapse now if page is not at top
+
+    // Navbar colapsa si la página no está arriba
     navbarCollapse();
-    // Collapse the navbar when page is scrolled
+    // Colapsa el navbar cuanndo la pagina es scroleada
     $(window).scroll(navbarCollapse);
+
 })(jQuery); // End of use strict

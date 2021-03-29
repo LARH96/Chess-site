@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Inspirar y guiar a personas a incursionar en el mundo del ajedrez mostrando su importancia como son sus beneficios mentales, 
+        fisicos y sociales, enseñando con tutoriales, además de aportar valor a la comunidad neofita o con experiencia." />
+  <meta name="author" content="Luis Alberto Rodríguez Herrera" />
+
+  <title>Ajedrez</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/ico-chess.jpeg" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet" />
+
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+
+  <!-- Proyect extra css-->
+  <link href="css/estilos.css" rel="stylesheet" />
+
+  <!-- JQuery-UI-->
+  <link rel="stylesheet" type="text/css" href="./jquery-ui-1.12.1.custom/jquery-ui.min.css">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNavNoHome">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger nav-link" href="index.html">Inicio</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="datosgeneralesdelservicio.html">¿Quienes
+              somos?</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Contenido
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item dpitem" href="historia.html">Historia</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item dpitem" href="beneficios.html">Beneficios</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item dpitem" href="tutorial.html">Tutoriales</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item dpitem" href="galeriadeimagenes.html">Galería de imagenes</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item dpitem" href="https://fcacostarica.com/" target="_blank">Federacion
+                Central de Ajedrez Costa Rica</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item dpitem" href="https://www.fide.com/" target="_blank">Federacion
+                Internacional de Ajedrez</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="acercadelsitio.html">Acerca del
+              sitio</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="infodecontacto.html">Contacto</a>
+          </li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="autor.html">Autor</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main-->
+  <div class="container" id="empezar">
+
+    <!-- Propietario -->
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center mt-5 text-primary text-uppercase">Propietario del sitio web</h1>
+
+        <table class="table table-striped table-hover">
+          <tbody>
+            <tr>
+              <th scope="row">Nombre</th>
+              <td>Luis Alberto Rodríguez Herrera</td>
+            </tr>
+            <tr>
+              <th scope="row">Correo electrónico</th>
+              <td>lalbertorodriguez96@gmail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">Teléfono Celular</th>
+              <td>(+506) 8663-7736</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Formulario -->
+    <h1 class="text-center mt-5 text-danger text-uppercase">Envíanos un mensaje</h1>
+    <form>
+      <div class="form-row">
+        <div class="col-12">
+          <label for="validationDefault03">Nombre completo</label>
+          <input type="text" class="form-control" id="validationDefault03" placeholder="Ej: Estefany Bolaños Vega"
+            required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-md-4">
+          <label for="validationDefault02">Correo electrónico</label>
+          <input type="text" class="form-control" id="validationDefault02" placeholder="Ej: estefany99" value=""
+            required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefaultUsername">.</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            </div>
+            <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Ej: gmail.com"
+              aria-describedby="inputGroupPrepend2" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-4">
+          <label for="inputState">Grado académico</label>
+          <select id="inputState" class="form-control">
+            <option selected>Primaria incompleta</option>
+            <option>Primaria completa</option>
+            <option>Secundaria incompleta</option>
+            <option>Secundaria completa</option>
+            <option>FARO / Bachiller Educación Media</option>
+            <option>Técnico Medio</option>
+            <option>Técnico Superior</option>
+            <option>Diplomado Universitario</option>
+            <option>Bachiller Universitario</option>
+            <option>Licenciatura</option>
+            <option>Maestría</option>
+            <option>Doctorado</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="inputState">Rango de ingreso salarial</label>
+          <select id="inputState" class="form-control">
+            <option selected>No ingresos</option>
+            <option>Entre 0 y 600 dólares al mes</option>
+            <option>Entre 601 y 1200 dólares al mes</option>
+            <option>Entre 1201 y 2000 dólares al mes</option>
+            <option>Entre 2001 y 3000 dólares al mes</option>
+            <option>Entre 3001 y 4000 dólares al menos</option>
+            <option>Entre 4001 y 8000 dólares al menos</option>
+            <option>Entre 8001 y 10.000 dólares al menos</option>
+            <option>Más de 10.000 dólares al mes</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+
+        <div class="col-md-6 mb-3">
+          <label for="exampleFormControlTextarea1" id="sms">Mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aquí tú mensaje"
+            required></textarea>
+        </div>
+
+        <div class="col-md-3 mb-3">
+          <!-- datetime picker-->
+          <p>Fecha de nacimiento: <input type="text" id="datepicker" value="" required></p>
+
+          <!-- Edad oculta -->
+          <input id="edad" style="display:none" type="text" readonly>
+
+        </div>
+        <div class="col-md-3 mb-3">
+          <p class="form-check-label">Género: </p>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label" for="inlineRadio1">Masculino</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Femenino</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio2">Otro</label>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="submit" id="enviar">Enviar</button>      
+    </form>
+
+  </div> <!-- end container-->
+
+  <br>
+  <br>
+  <!-- Mapa de geolocalización-->
+  <div class="container">
+    <div class="row">
+      <h1 class="text-warning">Encuentranos:</h1>
+      <iframe id="frameGeolocalizacion" src="geolocalizacion.html" title="Geolocalización"></iframe>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- Footer-->
+  <footer class="footer bg-black small text-center text-white-50 fixed-bottom">
+    <div class="container">Derechos reservados © Luis A. Rodríguez H. 2021</div>
+  </footer>
+
+  <!-- Bootstrap core JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+
+  <!-- JQuery-UI-->
+  <script src="./jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
