@@ -1,0 +1,52 @@
+{
+    "photos": [
+        {
+            "id": 1,
+            "url": "./assets/img/fondos/imgAjedrez.jpeg"
+        },
+        {
+            "id": 2,
+            "url": "./assets/img/fondos/65722-ajedrez.jpg"
+        },
+        {
+            "id": 3,
+            "url": "./assets/img/fondos/imgaje.jpeg"
+        },
+        {
+            "id": 4,
+            "url": "./assets/img/fondos/FondosWiki.com-piezas-de-ajedrez-en-el-tablero.jpg"
+        },
+        {
+            "id": 5,
+            "url": "./assets/img/fondos/juego-de-ajedrez.jpg"
+        },
+        {
+            "id": 6,
+            "url": "./assets/img/fondos/jugada-de-ajedrez.jpg"
+        },
+        {
+            "id": 7,
+            "url": "./assets/img/fondos/peon-de-ajedrez.jpg"
+        },
+        {
+            "id": 8,
+            "url": "./assets/img/fondos/piezas-de-ajedrez-de-piedra.jpg"
+        },
+        {
+            "id": 9,
+            "url": "./assets/img/fondos/rey-blanco.jpg"
+        },
+        {
+            "id": 10,
+            "url": "./assets/img/fondos/rey-contra-rey.jpg"
+        },
+        {
+            "id": 11,
+            "url": "./assets/img/fondos/tablero-de-ajedrez.jpg"
+        },
+        {
+            "id": 12,
+            "url": "./assets/img/fondos/thumb-1920-995808.jpg"
+        }
+    ]
+}

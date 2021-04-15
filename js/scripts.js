@@ -53,7 +53,7 @@
         calculaEdad();
     });
 
-    function calculaEdad(){
+    function calculaEdad() {
         var hoy = new Date();
         var cumpleanos = new Date(document.getElementById('datepicker').value);
         var edad = hoy.getFullYear() - cumpleanos.getFullYear();
@@ -65,21 +65,5 @@
         console.log("Edad:" + edad);
         document.getElementById('edad').value = edad;
     }
-
-    // Collapse Navbar
-    var navbarCollapse = function () {
-        if (
-            $("#mainNav").offset().top > 100
-           ) {
-            $("#mainNav").addClass("navbar-shrink");
-        } else {
-            $("#mainNav").removeClass("navbar-shrink");
-        }
-    };
-
-    // Navbar colapsa si la página no está arriba
-    navbarCollapse();
-    // Colapsa el navbar cuanndo la pagina es scroleada
-    $(window).scroll(navbarCollapse);
-
+    
 })(jQuery); // End of use strict
